@@ -20,24 +20,37 @@ void AProcdeduralCubeActor::BeginPlay()
 	Super::BeginPlay();
 	
 
-	Positions.Add(FVector(0, 50, -50));		// 1st vert's position
+	Positions.Add(FVector(0, 50, 50));		// 1st vert's position
 	Positions.Add(FVector(0, -50, -50));	// 2nd vert's position
 	Positions.Add(FVector(0, -50, 50));		// 3rd vert's position
-	//Positions.Add(FVector(0, 50, 50));
+	Positions.Add(FVector(0, 50, -50));		// 3rd vert's position
+
+	
+//	Positions.Add(FVector(50, 50, 50));
+	//Positions.Add(FVector(50, -50, -50));
+	//Positions.Add(FVector(50, -50, 50));
 
 	Uvs.Add({0,0});
 	Uvs.Add({1,1});
 	Uvs.Add({1,0});
 
+	
+
+	
+
+
+
 	TrianglesIndices.Add(0);
 	TrianglesIndices.Add(1);
 	TrianglesIndices.Add(2);
-	//TrianglesIndices.Add(3);
 
-	//TrianglesIndices.Add(0);
-	//TrianglesIndices.Add(3);
-	//TrianglesIndices.Add(2);
-	//TrianglesIndices.Add(1);
+	TrianglesIndices.Add(3);
+	TrianglesIndices.Add(1);
+	TrianglesIndices.Add(0);
+
+
+
+	
 
 	
 
