@@ -33,6 +33,12 @@ void AProcdeduralCubeActor::BeginPlay()
 	Uvs.Add({0,0});
 	Uvs.Add({1,1});
 	Uvs.Add({1,0});
+	Uvs.Add({0,1});
+
+	//Uvs.Add({0,1});
+	//Uvs.Add({1,1});
+	//Uvs.Add({0,0});
+
 
 	
 
